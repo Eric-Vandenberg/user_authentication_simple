@@ -4,7 +4,6 @@
     //connect to our mysql database
     include('mysql_connect.php');
     //get username and password values from our login form, and put them in easier-to-use variables
-    //$showusername = 
     //$username = ?
     $username = $_POST['username'];
     
@@ -32,10 +31,9 @@
     else 
     {
         //inform the user that their username/password was incorrect
-        print('Invalid');
-
+        
     }
     
     //end of file.  output any results here.
-    echo $result;
+
 ?>

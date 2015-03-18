@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Login Form</title>
-    <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
-
-
 <style>
 body{
     height: 100vh;
@@ -32,7 +29,7 @@ body{
     <form action="login.php" method="post">
         <input class="usrnm"type="text" name="username" placeholder="Username">
         <input class="usrnm"type="text" name="password" placeholder="Password">
-        <button type="button" id="usrlgn" class="btn">Login</button>
+        <button type="button" id="usrlgn" class="btn"></button>
     </form>
 </div>
 
