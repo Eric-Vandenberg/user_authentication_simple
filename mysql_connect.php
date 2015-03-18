@@ -1,3 +1,3 @@
 <?php
-    $CONN = mysqli_connect('localhost','root','','user_auth');
+    $CONN = mysqli_connect('localhost','root','','test');
 ?>

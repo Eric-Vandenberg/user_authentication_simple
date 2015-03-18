@@ -32,7 +32,7 @@ body{
     <form action="login.php" method="post">
         <input class="usrnm"type="text" name="username" placeholder="Username">
         <input class="usrnm"type="text" name="password" placeholder="Password">
-        <button type="button" id="usrlgn" class="btn">Login</button>
+        <button type="submit" id="usrlgn" class="btn">Login</button>
     </form>
 </div>
 

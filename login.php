@@ -14,7 +14,7 @@
     //convert our password into a hashed password, using the function "sha1": $password
     ///////////$encrypted_password = sha1($password);
     //construct an SQL statement, $query, that selects the record with both our username and hashed password, $username and $password. The table is "users" 
-    $query = "SELECT * FROM test WHERE name='$username' AND password='$password'";
+    $query = "SELECT * FROM user_auth WHERE username='$username' AND password='$password'";
 
     //execute $query, and receive the results in $results
     $result = mysqli_query($CONN, $query);
@@ -22,7 +22,7 @@
     if(mysqli_num_rows($result)!=1)
     
     {
-        print('User Validated');
+        echo "User Validated";
         //if the user was validated, fetch the user's data into $user_info variable
         $user_info = mysqli_fetch_assoc($result);
         //put the user's data into a key/value pair in the session superglobal.  Use key 'userinfo' in the session superglobal
@@ -32,10 +32,9 @@
     else 
     {
         //inform the user that their username/password was incorrect
-        print('Invalid');
+        echo "Invalid Login";
 
     }
     
     //end of file.  output any results here.
-    echo $result;
 ?>
